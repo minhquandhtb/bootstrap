@@ -1,0 +1,51 @@
+mixin list(...items)
+  each item in items
+    a.small-text(href="#")= item
+    br
+
+footer.container
+    .row
+        .col
+            h5 Hỗ trợ khách hàng
+            br
+            +list('Các câu hỏi thường gặp','Gửi yêu cầu hỗ trợ','Hướng dẫn đặt hàng','Phương thức vận chuyển','Chính sách đổi trả','Hướng dẫn mua trả góp','Chính sách hàng nhập khẩu')
+        .col
+            h5 Về Aloha
+            br
+            +list('Giới thiệu Aloha','Tuyển dụng','Chính sách bảo mật thanh toán','Chính sách bảo mật thông tin cá nhân','Chính sách giải quyết khiếu nại','Điều khoản sử dụng','Tư vấn','Bán hàng doanh nghiệp')
+        .col
+            h5 Phương thức thanh toán
+            .row
+                .col
+                    +img('images/footer/visa.png')
+                .col
+                    +img('images/footer/mastercard.png')
+                .col
+                    +img('images/footer/jcb.png')
+                .w-100
+                .col
+                    +img('images/footer/cash.png')
+                .col
+                    +img('images/footer/installment.png')
+                .col
+                    +img('images/footer/internet-banking.png')
+        .col
+            h5 Kết nói với chúng tôi
+            .row
+                .col
+                    +img('images/footer/facebook.png')
+                .col
+                    +img('images/footer/youtube.png')
+                .col
+                    +img('images/footer/zalo.png')
+                .col
+            h5 Tải ứng dụng trên điện 
+            .row
+                .col
+                    +img('images/footer/playstore.png')
+                    +img('images/footer/appstore.png')
+                .col
+br
+br
+br
+br

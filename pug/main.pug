@@ -1,7 +1,16 @@
 mixin img(link)
     img.d-block.w-100(src=link, alt="img")
+mixin item(link,title,price,discount,original)
+    a(href="#",title=title)
+        img.d-block.w-100(src=link, alt="item")
+        p.title= title 
+        p.price= price
+            span.discount= discount
+            span.original= original
+
+
 main.container
-    .row.no-gutters
+    section.row.no-gutters
         .col-lg-2.col-sm-12
             .list-group
                 a.list-group-item.list-group-item-action(href="#") Điện thoại
@@ -39,4 +48,29 @@ main.container
         .col-lg-2.col-sm-6
             +img('images/qc5.png')
             +img('images/qc6.png')
-            
+    section.row.section-product.row-cols-lg-6.row-cols-sm-4
+        .col
+            +item('images/product/1.jpg','iPad WiFi 32GB New 2018 - Hàng Chính Hãng','6.969.000 đ','-23%','8.990.000 đ')
+        .col    
+            +item('images/product/2.jpg','Điện Thoại iPhone 6s Plus 32GB VN/A - Hàng Chính Hãng','7.990.000 đ','-28%','10.990.000 đ')
+        .col
+            +item('images/product/3.jpg','Điện Thoại OPPO A3s (16GB/2GB) - Hàng Chính Hãng','2.690.000 đ','-28%','3.690.000 đ')
+        .col    
+            +item('images/product/4.jpg','Smart Tivi LG 43 inch 4K UHD 43UK6340PTF - Hàng chính hãng','7.690.000 đ','-19%','9.423.700 đ')
+        .col
+            +item('images/product/5.jpg','Smart Tivi Samsung 49 inch UHD 4K UA49NU7100KXXV - Hàng chính hãng','8.990.000 đ','-28%','12.413.000 đ')
+        .col    
+            +item('images/product/6.jpg','Điện Thoại Xiaomi Mi 8 Lite (4GB / 64GB) - Hàng Chính Hãng','3.890.000 đ','-42%','6.690.000 đ')
+        .col
+            +item('images/product/1.jpg','iPad WiFi 32GB New 2018 - Hàng Chính Hãng','6.969.000 đ','-23%','8.990.000 đ')
+        .col    
+            +item('images/product/2.jpg','Điện Thoại iPhone 6s Plus 32GB VN/A - Hàng Chính Hãng','7.990.000 đ','-28%','10.990.000 đ')
+        .col
+            +item('images/product/3.jpg','Điện Thoại OPPO A3s (16GB/2GB) - Hàng Chính Hãng','2.690.000 đ','-28%','3.690.000 đ')
+        .col    
+            +item('images/product/4.jpg','Smart Tivi LG 43 inch 4K UHD 43UK6340PTF - Hàng chính hãng','7.690.000 đ','-19%','9.423.700 đ')
+        .col
+            +item('images/product/5.jpg','Smart Tivi Samsung 49 inch UHD 4K UA49NU7100KXXV - Hàng chính hãng','8.990.000 đ','-28%','12.413.000 đ')
+        .col    
+            +item('images/product/6.jpg','Điện Thoại Xiaomi Mi 8 Lite (4GB / 64GB) - Hàng Chính Hãng','3.890.000 đ','-42%','6.690.000 đ')
+    hr
