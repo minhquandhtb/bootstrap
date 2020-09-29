@@ -1,0 +1,25 @@
+header.container
+    ul.nav.justify-content-end
+                        li.nav-item
+                            a.nav-link.active(href="#") Thông báo
+                        li.nav-item
+                            a.nav-link.active(href="#") Trợ giúp
+                        li.nav-item
+                            a.nav-link.active(href="#") Đăng ký
+                        li.nav-item
+                            a.nav-link.active(href="#") Đăng nhập
+    nav.navbar.navbar-expand-lg.navbar-light.bg-primary
+        a.navbar-brand(href="#")
+            img.logo(src="images/logo.png", alt="")
+        button.navbar-toggler(data-target='#my-nav', data-toggle='collapse', aria-controls='my-nav', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse#my-nav
+            ul.navbar-nav.mr-auto
+                li.nav-item.active
+                    a.nav-link(href='#') Home
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href="#") Link
+            form.form-inline.my-2.my-lg-0
+                input.form-control.mr-sm-2(type="search", placeholder="Search", aria-label="Search")
+                button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search

@@ -1,0 +1,49 @@
+mixin img(link)
+    img.w-100(src=link, alt="img")
+main.container
+    .row.row-cols-4
+        .col.px-0
+            .list-group
+                a.list-group-item.list-group-item-action(href="#") Điện thoại
+                a.list-group-item.list-group-item-action(href="#") Máy tính bảng
+                a.list-group-item.list-group-item-action(href="#") Điện tử - Điện lạnh
+                a.list-group-item.list-group-item-action(href="#") Điện tử - Điện lạnh
+                a.list-group-item.list-group-item-action(href="#") Điện tử - Điện lạnh
+                a.list-group-item.list-group-item-action(href="#") Điện tử - Điện lạnh
+                a.list-group-item.list-group-item-action(href="#") Điện tử - Điện lạnh
+        .col-6.px-0
+            .carousel.slide#my-carousel(data-ride='carousel')
+                ol.carousel-indicators
+                    li.active(data-target='#my-carousel', data-slide-to='0')
+                    li(data-target='#my-carousel', data-slide-to='1')
+                    li(data-target='#my-carousel', data-slide-to='2')
+                    li(data-target='#my-carousel', data-slide-to='3')
+                .carousel-inner
+                    .carousel-item.active
+                        +img('images/slide1.jpg')
+                    .carousel-item
+                        +img('images/slide2.jpg')
+                    .carousel-item
+                        +img('images/slide3.jpg')
+                    .carousel-item
+                        +img('images/slide4.jpg')
+                a.carousel-control-prev(href='#my-carousel', data-slide='prev', role='button')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                a.carousel-control-next(href='#my-carousel', data-slide='next', role='button')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next
+            .row.row-cols-2
+                .col.px-0.w-100
+                    +img('images/qc7.png')
+                .col.px-0.w-100    
+                    +img('images/qc8.png')
+                              
+        .col.px-0
+            +img('images/qc3.png')
+            +img('images/qc4.png')
+            +img('images/qc6.png')
+        .col.px-0
+            +img('images/qc5.png')
+            +img('images/qc6.png')
+            +img('images/qc4.png')
