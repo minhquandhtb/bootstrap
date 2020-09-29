@@ -7,7 +7,7 @@ header.container
                         li.nav-item
                             a.nav-link.active(href="#") Đăng ký
                         li.nav-item
-                            a.nav-link.active(href="#") Đăng nhập
+                            a.nav-link.active(href="#", data-toggle="modal",data-target="#login--modal-center") Đăng nhập
     nav.navbar.navbar-expand-lg.navbar-light.bg-primary
         a.navbar-brand(href="#")
             img.logo(src="images/logo.png", alt="")
@@ -23,3 +23,21 @@ header.container
             form.form-inline.my-2.my-lg-0
                 input.form-control.mr-sm-2(type="search", placeholder="Search", aria-label="Search")
                 button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search
+.modal.fade#login--modal-center(tabindex='-1', role='dialog', aria-labelledby='my-modal-title', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                h5.modal-title(id='my-modal-title') Đăng nhập
+                button.close(data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                form
+                    .form-group
+                        label.col-form-label(for="account") Tên đăng nhập
+                        input.form-control#account(type="text")
+                    .form-group
+                        label.col-form-label(for="password") Mật khẩu
+                        input.form-control#password(type="password")
+            .modal-footer
+                button.btn.btn-primary(type=button) Đăng nhập
+                button.btn.btn-secondary(type=button) Đăng ký
