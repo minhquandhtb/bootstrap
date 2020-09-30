@@ -8,6 +8,18 @@
   width: 100px;
 }
 
+header {
+  background-image: url(images/bg.png);
+}
+
+a.nav-link {
+  color: white;
+}
+
+#my-nav a.nav-link {
+  color: white;
+}
+
 a.small-text {
   font-size: small;
   color: #000000bd;
@@ -43,6 +55,10 @@ a.small-text {
   color: #787878;
   font-size: 13px;
   font-weight: 300;
+}
+
+.section-product a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

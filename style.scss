@@ -1,42 +1,45 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@import 'scss/color';
-@import 'scss/header';
-@import 'scss/main';
-@import 'scss/footer';
+@import "scss/color";
+@import "scss/header";
+@import "scss/main";
+@import "scss/footer";
 a.small-text {
-    font-size: small;
-    color: #000000bd;
-    text-decoration: none;
+  font-size: small;
+  color: #000000bd;
+  text-decoration: none;
 }
-.original{
-    display: block;
-    margin-left: 0px;
-    color: rgb(120, 120, 120);
-    font-size: 13px;
-    font-weight: 300;
-    text-decoration: line-through;
- }
- .discount{
-    margin-left: 8px;
-    color: rgb(120, 120, 120);
-    font-size: 13px;
-    font-weight: 300;
- }
- .price{
-    display: block;
-    margin-left: 0px;
-    color: rgb(0,0,0);
-    font-size: 20px;
-    font-weight: 300;
- }
- .title{
-    margin-left: 0px;
-    color: rgb(120, 120, 120);
-    font-size: 13px;
-    font-weight: 300;
- }
+.original {
+  display: block;
+  margin-left: 0px;
+  color: $text--color-2;
+  font-size: 13px;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+.discount {
+  margin-left: 8px;
+  color: $text--color-2;
+  font-size: 13px;
+  font-weight: 300;
+}
+.price {
+  display: block;
+  margin-left: 0px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 300;
+}
+.title {
+  margin-left: 0px;
+  color: $text--color-2;
+  font-size: 13px;
+  font-weight: 300;
+}
+.section-product a{
+text-decoration: none;
+}
