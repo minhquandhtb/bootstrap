@@ -17,10 +17,13 @@ header.container-fluid
             .collapse.navbar-collapse#my-nav
                 ul.navbar-nav.mr-auto
                     li.nav-item.active
-                        a.nav-link(href='#') Home
-                            span.sr-only (current)
+                        a.nav-link(href='#', data-toggle='popover', data-placement='top',title='Popover', data-content='This is content of my popover') Home
+                    script.
+                        $(function () {
+                        $('[data-toggle="popover"]').popover()
+                        })
                     li.nav-item
-                        a.nav-link(href="#") Link
+                        a.nav-link(href="#", data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom') Link
                     li.nav-item.dropdown
                         a.nav-link.dropdown-toggle#my-dropdown(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Text
                         .dropdown-menu(aria-labelledby='my-dropdown')
